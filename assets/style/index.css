@@ -2,5 +2,146 @@
 
 body {
     background-color:  #121212;
-    padding-top: 30px;
+}
+
+.flexbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/********************************
+    Header
+********************************/
+
+header .flexbox {
+    height: 65px;
+}
+
+header .flexbox h2 {
+    color: #4495ee;
+    font-size: 28px;
+}
+
+.profile {
+    width: 50px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 50%;
+    background-image: url('../img/pfp.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/********************************
+    Post box
+********************************/
+
+.create-post {
+    padding: 50px 0;
+}
+
+.create-post .container {
+    width: 600px;
+    padding: 10px;
+}
+
+.post-box textarea {
+    resize: none;
+    width: 580px;
+    height: 200px;
+}
+
+.choose-img {
+    display:none;
+}
+
+.icon {
+    margin-top: auto;
+    font-size: 20px;
+    color: #c3c3c3;
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.post {
+    width: 75px;
+    height: 40px;
+}
+
+.post {
+    background-color: #4495ee;
+}
+
+.post-box textarea::placeholder {
+    color: #c3c3c3;
+}
+
+/********************************
+    Feed
+********************************/
+
+.feed .container {
+    width: 600px;
+}
+
+.feed-head {
+    padding: 0 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.feed-head, .content {
+    background-color: #fff;
+}
+
+.content {
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+
+.content img {
+    margin: 0 auto;
+}
+
+/********************************
+    Same properties
+********************************/
+
+nav ul li a, .post-box textarea, .post {
+    color: #fff;
+}
+
+.create-post .container, .post {
+    border-radius: 6px;
+}
+
+.page-header, .create-post .container, .post-box textarea {
+    background-color: #434343;
+}
+
+nav ul li a, .post-box textarea, .post, .user-name, .date-posted {
+    font-size: 17px;
+}
+
+nav ul li + li, .poster p {
+    margin-left: 15px;
 }
