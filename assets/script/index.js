@@ -51,12 +51,12 @@ chooseImg.addEventListener('change', function() {
 *********************************/
 
 function addUserInfo() {
-    userInfo.innerHTML = subscriber.getInfo();
+    userInfo.innerHTML = subscriber.getInfo().split('/').join('<br>');
 }
 
 function verifyPost() {
     if (chooseImg.value === '' && text.value === '') 
-        alert('Please type something in the text box, or choose an image to upload.');
+        text.placeholder = 'Get started by typing something here or selecting an image to upload!';
     else createPost();  
 }
 
