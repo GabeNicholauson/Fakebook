@@ -30,7 +30,7 @@ class User {
     }
 
     getInfo() {
-        return `ID: ${this.id}<br> Name: ${this.name}<br> User name: ${this.userName}<br> Email: ${this.email}`;
+        return `ID: ${this.id}/ Name: ${this.name}/ User name: ${this.userName}/ Email: ${this.email}`;
     }
 }
 
@@ -63,7 +63,7 @@ class Subsciber extends User {
     }
 
     getInfo() {
-        return `${super.getInfo()}<br> Pages: ${this.pages.join(', ')}<br> Groups: ${this.groups.join(', ')}<br> Can monetize: ${this.canMonetize}`;
+        return `${super.getInfo()}/ Pages: ${this.pages.join(', ')}/ Groups: ${this.groups.join(', ')}/ Can monetize: ${this.canMonetize}`;
     }
 }
 
